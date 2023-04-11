@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: test000dep
+spec:
+  selector:
+    matchLabels:
+      app: test000kube
+  replicas: 5
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 10
+      maxUnavailable: 10
+  template:
+    metadata:
+      labels:
+        app: test000kube
+    spec:
+      containers:
+      - name: apa000ex91
+        image: nginx
+        ports:
+          - containerPort: 80
