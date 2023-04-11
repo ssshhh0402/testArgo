@@ -8,6 +8,6 @@ spec:
   - port: 8099
     targetPort: 80
     protocol: TCP
-    nodePort: 30080
+    nodePort: 30090
   selector:
     app: testargo
