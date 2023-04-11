@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: test000kube
+      app: testargo
   replicas: 5
   strategy:
     type: RollingUpdate
@@ -15,7 +15,7 @@ spec:
   template:
     metadata:
       labels:
-        app: test000kube
+        app: testargo
     spec:
       containers:
       - name: apa000ex91

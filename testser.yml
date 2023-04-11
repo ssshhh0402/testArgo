@@ -10,4 +10,4 @@ spec:
     protocol: TCP
     nodePort: 30080
   selector:
-    app: test000kube
+    app: testargo
